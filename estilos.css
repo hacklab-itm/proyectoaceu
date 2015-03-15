@@ -1,0 +1,106 @@
+/*
+Estilos para el proyecto del HackLab ITM
+*/
+
+
+a
+{
+	color: #22BCE0;
+}
+
+body
+{
+	background : #EEEEEE;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+footer
+{
+	background: #22BCE0;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
+	text-align: center;
+}
+
+footer p:first-child
+{
+	margin-bottom: 0;
+}
+
+footer p:last-child
+{
+	margin-top: 0;
+}
+
+footer p:last-child:before
+{
+	content: "- ";
+}
+
+footer p:last-child:after
+{
+	content: " -";
+}
+
+header
+{
+	background: #344B54;
+	color: #fff;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+
+header figure
+{
+	float: left;
+}
+
+header h1
+{
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 0 70px 0 0;
+}
+
+header #avatar
+{
+	margin: 0.5em 0.5em 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+header #avatar img
+{
+	border-radius: 50%;
+	width: 55px;  
+}
+
+header #logo
+{
+	border-right: 1px solid #fff;
+	padding-right: 0.5em;
+	margin-right: 0.0em;
+}
+
+header #logo img
+{
+	/*border-radius: 20%; */
+	width: 52px;
+	-o-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+header #logo img:hover
+{
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
