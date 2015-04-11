@@ -3,6 +3,62 @@ Estilos para el proyecto del HackLab ITM
 */
 
 
+
+
+
+@font-face {
+	font-family: 'HackLab';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*="icon-"]
+{
+	font-family: 'HackLab';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: normal;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lapiz
+{
+	text-transform: capitalize;
+}
+
+.icon-lapiz:before
+{
+	content: "\f040";
+	color: #fff;
+	margin-right: 0.5em;
+	text-shadow: rgba(0,0,0,0.7) 2px 2px 5px;
+}
+
+.icon-flecha-arriba:before
+{
+	content: "\f01b";
+	color: green;
+}
+
+.icon-flecha-abajo:before
+{
+	content: "\f01a";
+	color: red;
+}
+
+.icon-estrella:before
+{
+	content: "\f005";
+	color: yellow;
+}
+
 a
 {
 	color: #22BCE0;
