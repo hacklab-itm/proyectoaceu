@@ -8,16 +8,15 @@
 
 // Así declaramos variables 
 // y le asignamos un elemento HTML completo dependiendo sus ID's
-var boton, email, pass, contError;
-boton = document.getElementById('boton');
-email = document.getElementById('email');
-pass = document.getElementById('pass');
-contError = document.getElementById('contError');
+var boton = document.getElementById('boton');
+var email = document.getElementById('email');
+var pass = document.getElementById('pass');
+var contError = document.getElementById('contError');
 
 // Le asignamos un evento "click" al elemento que asignamos a la variable "boton"
 // Y el evento redirige a la función con el nombre "validar". 
 // Esto es denominado "Callback" y es uno de los patrones principales del lenguaje JavaScript
-boton.addEventListener("click", validar);
+boton.on("click", "validar");
 
 
 // A una variable "validar" le asignamos una función completa.
@@ -25,7 +24,7 @@ boton.addEventListener("click", validar);
 // function validar () { ... }
 // O podemos hacerlo de forma anónima poniendo toda la función dentro del evento
 // boton.on("click", function(){ ... })
-function validar (){
+var validar = function (){
 	// Creamos una variable de tipo lógico para validar
 	var validado = false;
 	// Condicionales: si alguno de los campos (email, pass) está vacío, la variable será falsa. De lo contrario, es verdadera.
@@ -53,17 +52,16 @@ function validar (){
 		} 
 
 		// Si los campos no vinieron vacíos pero la contraseña es menor de 8 caracteres, muestra un error y se sale del código
-		if (pass.value.length < 8) {
+		if (!pass.value.length >= 8) {
 			error = "Contraseña demasiado corta";
 			contError.innerHTML = error;
 			return;
 		}
+
 		// Si no se salió del código, continúa con una función dentro de la función, enviando el formulario para que lo reciba el backend.
 		function ingresar() {
 			var formulario = document.getElementById('formulario');
 			formulario.submit();
 		}
-		//Invocamos el ingreso
-		ingresar();
 	}
 }
